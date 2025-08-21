@@ -1,5 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/40076cf9-4557-41a9-8d9b-ab95a7fd6509/deploy-status)](https://app.netlify.com/projects/clientglimpse/deploys)
 <div align="center">
-  <img src="assets/ClientGlimpse.png" alt="ClientGlimpse Logo" width="120">
+  <img src="assets/ClientGlimpse.png" alt="ClientGlimpse Logo" width="180">
   <h1>ClientGlimpse: A Dynamic Testimonials Section</h1>
   <p>A beautiful, feature-rich, and fully responsive client testimonials section with a stunning glassmorphism UI, built with pure HTML, CSS, and JavaScript.</p>
   
