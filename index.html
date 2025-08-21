@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientGlimpse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/tab.png">
+</head>
+<body data-theme="light">
+    <div class="testimonial-container fade-in">
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+        
+        <div class="testimonial-header">
+            <h2>What Our Clients Say</h2>
+            <p>Don't just take our word for it - hear from some of our amazing clients who trusted us with their projects.</p>
+        </div>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Testimonials</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+        </div>
+        
+        <div class="testimonial-wrapper" id="testimonialWrapper">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card visible" data-category="tech">
+                <div class="card-header">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Carter" class="client-image">
+                    <div class="client-details">
+                        <h3>John Carter</h3>
+                        <p class="client-role">CEO, TechSolutions Inc.</p>
+                        <div class="company">
+                            <img src="https://logo.clearbit.com/techsolutions.com" alt="TechSolutions" class="company-logo" onerror="this.style.display='none'">
+                            <span>TechSolutions Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text truncated">
+                    "Working with this team was an absolute game-changer for our business. Their innovative approach and attention to detail resulted in a 40% increase in our online engagement. The project was delivered ahead of schedule with exceptional quality. Their technical expertise in implementing the latest web technologies helped us stay ahead of our competitors."
+                </p>
+                <span class="read-more">Read More</span>
+                <div class="testimonial-footer">
+                    <span class="date">March 15, 2023</span>
+                    <div class="social-links">
+                        <a href="#" data-tooltip="View Twitter profile"><i class="fab fa-twitter"></i></a>
+                        <a href="#" data-tooltip="View LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" data-tooltip="Visit website"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card visible" data-category="design">
+                <div class="card-header">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="client-image">
+                    <div class="client-details">
+                        <h3>Sarah Johnson</h3>
+                        <p class="client-role">Marketing Director, BrightIdeas</p>
+                        <div class="company">
+                            <img src="https://logo.clearbit.com/brightideas.com" alt="BrightIdeas" class="company-logo" onerror="this.style.display='none'">
+                            <span>BrightIdeas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text truncated">
+                    "The level of professionalism and creativity exceeded all our expectations. They transformed our vague concepts into a stunning digital presence that perfectly represents our brand. Their ongoing support has been invaluable. The UI/UX design they delivered has significantly improved our customer engagement metrics."
+                </p>
+                <span class="read-more">Read More</span>
+                <div class="testimonial-footer">
+                    <span class="date">January 28, 2023</span>
+                    <div class="social-links">
+                        <a href="#" data-tooltip="View Twitter profile"><i class="fab fa-twitter"></i></a>
+                        <a href="#" data-tooltip="View LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card visible" data-category="business">
+                <div class="card-header">
+                    <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Michael Chen" class="client-image">
+                    <div class="client-details">
+                        <h3>Michael Chen</h3>
+                        <p class="client-role">Founder, StartupVision</p>
+                        <div class="company">
+                            <img src="https://logo.clearbit.com/startupvision.com" alt="StartupVision" class="company-logo" onerror="this.style.display='none'">
+                            <span>StartupVision</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text truncated">
+                    "As a startup, we needed partners who could move quickly without compromising quality. This team delivered beyond our wildest dreams. Their solution helped us secure Series A funding and scale our operations seamlessly. Their business insights coupled with technical expertise made them an invaluable partner in our growth journey."
+                </p>
+                <span class="read-more">Read More</span>
+                <div class="testimonial-footer">
+                    <span class="date">November 5, 2022</span>
+                    <div class="social-links">
+                        <a href="#" data-tooltip="View Twitter profile"><i class="fab fa-twitter"></i></a>
+                        <a href="#" data-tooltip="View LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" data-tooltip="Visit website"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card visible" data-category="tech">
+                <div class="card-header">
+                    <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Emma Rodriguez" class="client-image">
+                    <div class="client-details">
+                        <h3>Emma Rodriguez</h3>
+                        <p class="client-role">Product Manager, GlobalTech</p>
+                        <div class="company">
+                            <img src="https://logo.clearbit.com/globaltech.com" alt="GlobalTech" class="company-logo" onerror="this.style.display='none'">
+                            <span>GlobalTech</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="testimonial-text truncated">
+                    "The team demonstrated exceptional technical expertise and problem-solving skills. They identified issues we didn't even know we had and implemented solutions that improved our system performance by 60%. Highly recommended! Their ability to work with our legacy systems while implementing modern solutions was particularly impressive."
+                </p>
+                <span class="read-more">Read More</span>
+                <div class="testimonial-footer">
+                    <span class="date">September 12, 2022</span>
+                    <div class="social-links">
+                        <a href="#" data-tooltip="View LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" data-tooltip="Visit website"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-controls">
+            <button class="carousel-btn" id="prevButton">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn" id="nextButton">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <div class="autoplay-control">
+            <button class="autoplay-btn" id="autoplayBtn">
+                <i class="fas fa-pause"></i> Pause Autoplay
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
